@@ -370,7 +370,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body{
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   font-size:16px;
   margin:0;
   -webkit-font-smoothing: antialiased;
@@ -562,9 +562,139 @@ template {
 [hidden] {
   display: none;
 }
+
+/* ---- Font-size ---- */
+.px14{
+	font-size:0.875rem;
+}
+.px16{
+	font-size:1rem;
+}
+.px18{
+	font-size:1.125rem;
+}
+.px20{
+	font-size:1.25rem;
+}
+.px24{
+	font-size:1.5rem;
+}
+.px28{
+	font-size:1.75rem;
+}
+.px32{
+	font-size:2rem;
+}
+
+
+/* ---- Margin / padding reset ---- */
+.nom{
+	margin: 0;
+}
+.nop{
+	padding: 0;
+}
+.nom-nop{
+	padding: 0;
+}
+/* ---- Margin 4 8 16 ---- */
+.mt4{
+	margin-top: 4px;
+}
+.mb4{
+	margin-bottom: 4px;
+}
+.ml4{
+	margin-left: 4px;
+}
+.mr4{
+	margin-right: 4px;
+}
+
+.mt8{
+	margin-top: 8px;
+}
+.mb8{
+	margin-bottom: 8px;
+}
+.ml8{
+	margin-left: 8px;
+}
+.mr8{
+	margin-right: 8px;
+}
+
+.mt16{
+	margin-top: 16px;
+}
+.mb16{
+	margin-bottom: 16px;
+}
+.ml16{
+	margin-left: 16px;
+}
+.mr16{
+	margin-right: 16px;
+}
+
+/* ---- Padding 4 8 16 ---- */
+.pt4{
+	padding-top: 4px;
+}
+.pb4{
+	padding-bottom: 4px;
+}
+.pl4{
+	padding-left: 4px;
+}
+.pr4{
+	padding-right: 4px;
+}
+
+.pt8{
+	padding-top: 8px;
+}
+.pb8{
+	padding-bottom: 8px;
+}
+.pl8{
+	padding-left: 8px;
+}
+.pr8{
+	padding-right: 8px;
+}
+
+.pt16{
+	padding-top: 16px;
+}
+.pb16{
+	padding-bottom: 16px;
+}
+.pl16{
+	padding-left: 16px;
+}
+.pr16{
+	padding-right: 16px;
+}
 /* ---- Fin du reset ---- */
 
 
 /* ---- Début du projet ---- */
 
 
+.starter-folder-section{
+	max-width: 800px;
+	margin: 32px auto auto auto;
+	h1{
+		align-items: center;
+    	display: flex;
+	}
+	p{
+		display: flex;
+		align-items: center;
+		.material-icons, .material-icons-outlined{
+			font-size: 1rem;
+			padding-right: 8px;
+		}
+	}
+}
