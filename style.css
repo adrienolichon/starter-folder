@@ -1,20 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900");
 :root {
-  --white: 255, 255, 255;
-  --primary: 18, 110, 230;
-  --primary-hover: 12, 91, 194;
-  --primary-active: 8, 80, 150;
-  --red: 240, 62, 62;
-  --red-hover: 224, 49, 49;
-  --red-active: 180, 20, 20;
-  --green: 47, 158, 68;
-  --grey:231,232,232;
-  --grey-medium:216, 218, 218;
-  --grey-placeholder:173, 181, 189;
-  --dark-grey:111, 116, 116;
-  --dark-grey-click:200, 202, 202;
-  --light-white:247,248,248;
   /*  General
    *  ─────────────────────────────────── */
   --oc-white: #ffffff;
@@ -329,6 +315,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   color: var(--oc-gray-9);
+  background-color: var(--oc-white);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -492,7 +479,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted;
 }
 
 fieldset {
@@ -745,6 +732,27 @@ template {
 }
 
 /* ---- Fin du reset ---- */
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --oc-white: #000;
+    --oc-black: #fff;
+  }
+
+  body {
+    color: var(--oc-gray-0);
+  }
+
+  a {
+    color: var(--oc-indigo-4);
+  }
+  a:visited {
+    color: var(--oc-indigo-5);
+  }
+  a:hover {
+    color: var(--oc-indigo-6);
+  }
+}
 /* ---- Règles de design simples 
 
 # Utiliser la règle de 8 pour les expacements. 
