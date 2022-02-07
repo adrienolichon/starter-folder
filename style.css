@@ -381,6 +381,7 @@ pre {
 a {
   background-color: transparent;
   padding: 4px;
+  display: inline-block;
   color: var(--oc-indigo-5);
   font-weight: 700;
 }
@@ -559,198 +560,49 @@ template {
   display: none;
 }
 
-/* ---- Font-size ---- */
-.px14 {
-  font-size: 0.875rem;
-}
-
-.px16 {
-  font-size: 1rem;
-}
-
-.px18 {
-  font-size: 1.125rem;
-}
-
-.px20 {
-  font-size: 1.25rem;
-}
-
-.px24 {
-  font-size: 1.5rem;
-}
-
-.px28 {
-  font-size: 1.75rem;
-}
-
-.px32 {
-  font-size: 2rem;
-}
-
-/* ---- Margin / padding reset ---- */
-.nom {
-  margin: 0;
-}
-
-.nop {
-  padding: 0;
-}
-
-.nom-nop {
-  padding: 0;
-}
-
-/* ---- Margin 4 8 16 24 ---- */
-.mt4 {
-  margin-top: 4px;
-}
-
-.mb4 {
-  margin-bottom: 4px;
-}
-
-.ml4 {
-  margin-left: 4px;
-}
-
-.mr4 {
-  margin-right: 4px;
-}
-
-.mt8 {
-  margin-top: 8px;
-}
-
-.mb8 {
-  margin-bottom: 8px;
-}
-
-.ml8 {
-  margin-left: 8px;
-}
-
-.mr8 {
-  margin-right: 8px;
-}
-
-.mt16 {
-  margin-top: 16px;
-}
-
-.mb16 {
-  margin-bottom: 16px;
-}
-
-.ml16 {
-  margin-left: 16px;
-}
-
-.mr16 {
-  margin-right: 16px;
-}
-
-.mt24 {
-  margin-top: 24px;
-}
-
-.mb24 {
-  margin-bottom: 24px;
-}
-
-.ml24 {
-  margin-left: 24px;
-}
-
-.mr24 {
-  margin-right: 24px;
-}
-
-/* ---- Padding 4 8 16 24 ---- */
-.pt4 {
-  padding-top: 4px;
-}
-
-.pb4 {
-  padding-bottom: 4px;
-}
-
-.pl4 {
-  padding-left: 4px;
-}
-
-.pr4 {
-  padding-right: 4px;
-}
-
-.pt8 {
-  padding-top: 8px;
-}
-
-.pb8 {
-  padding-bottom: 8px;
-}
-
-.pl8 {
-  padding-left: 8px;
-}
-
-.pr8 {
-  padding-right: 8px;
-}
-
-.pt16 {
-  padding-top: 16px;
-}
-
-.pb16 {
-  padding-bottom: 16px;
-}
-
-.pl16 {
-  padding-left: 16px;
-}
-
-.pr16 {
-  padding-right: 16px;
-}
-
-.pt24 {
-  padding-top: 24px;
-}
-
-.pb24 {
-  padding-bottom: 24px;
-}
-
-.pl24 {
-  padding-left: 24px;
-}
-
-.pr24 {
-  padding-right: 24px;
-}
-
 /* ---- Fin du reset ---- */
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --oc-white: #000;
     --oc-black: #fff;
+    /*  Gray
+    *  ─────────────────────────────────── */
+    --oc-gray-9: #f8f9fa;
+    --oc-gray-9-rgb: 248, 249, 250;
+    --oc-gray-8: #f1f3f5;
+    --oc-gray-8-rgb: 241, 243, 245;
+    --oc-gray-7: #e9ecef;
+    --oc-gray-7-rgb: 233, 236, 239;
+    --oc-gray-6: #dee2e6;
+    --oc-gray-6-rgb: 222, 226, 230;
+    --oc-gray-5: #ced4da;
+    --oc-gray-5-rgb: 206, 212, 218;
+    --oc-gray-4: #adb5bd;
+    --oc-gray-4-rgb: 173, 181, 189;
+    --oc-gray-3: #868e96;
+    --oc-gray-3-rgb: 134, 142, 150;
+    --oc-gray-2: #495057;
+    --oc-gray-2-rgb: 73, 80, 87;
+    --oc-gray-1: #343a40;
+    --oc-gray-1-rgb: 52, 58, 64;
+    --oc-gray-0: #212529;
+    --oc-gray-0-rgb: 33, 37, 41;
   }
 
   body {
-    color: var(--oc-gray-0);
+    color: var(--oc-gray-9);
+    background-color: var(--oc-gray-0);
   }
 
   a {
-    color: var(--oc-indigo-4);
+    color: var(--oc-indigo-3);
   }
   a:visited {
-    color: var(--oc-indigo-5);
+    color: var(--oc-indigo-4);
   }
   a:hover {
-    color: var(--oc-indigo-6);
+    color: var(--oc-indigo-5);
   }
 }
 /* ---- Règles de design simples 
@@ -770,12 +622,14 @@ template {
 .starter-folder-section h1 {
   align-items: center;
   display: flex;
+  padding-bottom: 16px;
 }
 .starter-folder-section h1 span {
   padding-right: 16px;
   font-size: 1.75rem;
 }
 .starter-folder-section div {
+  min-height: 32px;
   display: flex;
   align-items: center;
 }
