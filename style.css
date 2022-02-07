@@ -332,8 +332,8 @@ body {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
+  padding: 4px 0;
   overflow-wrap: break-word;
-  padding: 8px 0 0 0;
   margin: 0;
 }
 
@@ -614,7 +614,7 @@ template {
   padding: 0;
 }
 
-/* ---- Margin 4 8 16 ---- */
+/* ---- Margin 4 8 16 24 ---- */
 .mt4 {
   margin-top: 4px;
 }
@@ -663,7 +663,23 @@ template {
   margin-right: 16px;
 }
 
-/* ---- Padding 4 8 16 ---- */
+.mt24 {
+  margin-top: 24px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+
+/* ---- Padding 4 8 16 24 ---- */
 .pt4 {
   padding-top: 4px;
 }
@@ -712,21 +728,60 @@ template {
   padding-right: 16px;
 }
 
+.pt24 {
+  padding-top: 24px;
+}
+
+.pb24 {
+  padding-bottom: 24px;
+}
+
+.pl24 {
+  padding-left: 24px;
+}
+
+.pr24 {
+  padding-right: 24px;
+}
+
 /* ---- Fin du reset ---- */
+/* ---- Règles de design simples 
+
+# Utiliser la règle de 8 pour les expacements. 
+# Avoir des zones d'actions facile à cliquer / toucher. 
+# Utiliser les rem pour les font-size. 
+# Utiliser les pixels, % et fr pour les grids / flex. 
+
+---- */
 /* ---- Début du projet ---- */
 .starter-folder-section {
   max-width: 800px;
   margin: 32px auto auto auto;
+  padding: 0 16px;
 }
 .starter-folder-section h1 {
   align-items: center;
   display: flex;
 }
-.starter-folder-section p {
+.starter-folder-section h1 span {
+  padding-right: 16px;
+  font-size: 1.75rem;
+}
+.starter-folder-section div {
   display: flex;
   align-items: center;
 }
-.starter-folder-section p .material-icons, .starter-folder-section p .material-icons-outlined {
+.starter-folder-section div .material-icons, .starter-folder-section div .material-icons-outlined {
   font-size: 1rem;
   padding-right: 8px;
+}
+.starter-folder-section div p {
+  display: block;
+  padding: 8px 0;
+}
+.starter-folder-section .notes {
+  padding-top: 48px;
+}
+.starter-folder-section .infos-bottom {
+  padding-top: 32px;
 }/*# sourceMappingURL=style.css.map */
